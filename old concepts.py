@@ -52,3 +52,6 @@ for key, value in person.items():
     print("Key: {}, Value: {}".format(key,value))
 
 # Importations
+import math
+
+print(math.pow(2,4))
