@@ -19,6 +19,8 @@ class Person:
         self.gender = new_gender
         return "Gender changed to {}".format(new_gender)
     
+    # Overriding default object output
+    
     
 Kyle = Person("Kyle",25,"Male", "Fair")
 print(Kyle.name)
