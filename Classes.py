@@ -11,13 +11,16 @@ class Person:
         self.name = new_name
         return "Name changed to {}".format(new_name)
     
-    def changeAge(self,new_age):
-        self.name = new_age
+    def changeAge(self,new_age: int):
+        self.age = new_age
         return "Age changed to {}".format(new_age)
     
     def changeGender(self,new_gender):
-        self.name = new_gender
+        self.gender = new_gender
         return "Gender changed to {}".format(new_gender)
     
     
-Kyle = Person("")
+Kyle = Person("Kyle",25,"Male", "Fair")
+print(Kyle.name)
+Kyle.changeAge(29)
+print(Kyle.age)
