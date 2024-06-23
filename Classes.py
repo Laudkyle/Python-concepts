@@ -1,7 +1,7 @@
 # The concept of classes
 
 class Person:
-    def __init__(self, name, age, gender, complexion):
+    def __init__(self, name: str, age: int, gender: str, complexion: str):
         self.name = name
         self.age = age
         self.gender = gender
@@ -18,3 +18,6 @@ class Person:
     def changeGender(self,new_gender):
         self.name = new_gender
         return "Gender changed to {}".format(new_gender)
+    
+    
+Kyle = Person("")
