@@ -32,3 +32,10 @@ lettersB  = {'f','e','a','g'}
 
 union = lettersA | lettersB
 intersection = lettersA & lettersB
+diff = lettersA - lettersB
+
+print("""
+      This is the Union of sets{}
+      This is the Intersection of sets {}
+      This is the Difference of sets {}
+      """)
