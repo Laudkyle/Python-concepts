@@ -38,4 +38,4 @@ print("""
       This is the Union of sets{}
       This is the Intersection of sets {}
       This is the Difference of sets {}
-      """)
+      """.format(union,intersection,diff))
