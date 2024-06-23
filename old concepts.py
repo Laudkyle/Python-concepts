@@ -29,3 +29,6 @@ print(brands)
 
 lettersA  = {'a','b','c','d'}
 lettersB  = {'f','e','a','g'}
+
+union = lettersA | lettersB
+intersection = lettersA & letters
