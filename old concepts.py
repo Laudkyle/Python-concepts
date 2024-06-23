@@ -48,3 +48,5 @@ person = {
     'Location': "University of Cape Coast"
 }
 
+for key, value in person.items():
+    print("Key: {}, Value: {}".format(key,value))
