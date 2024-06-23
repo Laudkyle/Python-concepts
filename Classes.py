@@ -20,9 +20,12 @@ class Person:
         return "Gender changed to {}".format(new_gender)
     
     # Overriding default object output
+    def __str__(self) -> str:
+        return self.name
     
     
 Kyle = Person("Kyle",25,"Male", "Fair")
 print(Kyle.name)
 Kyle.changeAge(29)
 print(Kyle.age)
+print(Kyle)
