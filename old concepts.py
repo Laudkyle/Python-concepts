@@ -39,3 +39,12 @@ print("""
       This is the Intersection of sets {}
       This is the Difference of sets {}
       """.format(union,intersection,diff))
+
+## Dictionaries
+
+person = {
+    'Name': "Kyle",
+    'Age':26,
+    'Location': "University of Cape Coast"
+}
+
