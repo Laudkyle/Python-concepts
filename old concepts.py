@@ -26,3 +26,6 @@ print(brands.index("brand 1"))
 
 brands = set(brands)
 print(brands)
+
+lettersA  = {'a','b','c','d'}
+lettersB  = {'f','e','a','g'}
