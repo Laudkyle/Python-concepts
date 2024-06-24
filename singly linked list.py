@@ -20,6 +20,9 @@ class LinkedList:
             last_node.next = new_node
             
     def printList(self):
+        if self.head is None:
+            print("List is empty!!!")
+            return
         current_node = self.head
         while True:
             if current_node is None:
@@ -28,4 +31,14 @@ class LinkedList:
             current_node = current_node.next
         
 Node1 = Node("node 1")
-list1 = LinkedList(Node1)
+Node2 = Node("node 2")
+Node3 = Node("node 3")
+Node4 = Node("node 4")
+Node5 = Node("node 5")
+list1 = LinkedList()
+# list1.insert(Node1)
+# list1.insert(Node2)
+# list1.insert(Node3)
+# list1.insert(Node4)
+# list1.insert(Node5)
+list1.printList()
