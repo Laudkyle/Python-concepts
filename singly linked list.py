@@ -29,6 +29,13 @@ class LinkedList:
                 break
             print(current_node.data)
             current_node = current_node.next
+            
+    def insertHead(self, new_node):
+        temp = self.head
+        self.head =new_node
+        self.head.next =temp
+        
+        
         
 Node1 = Node("node 1")
 Node2 = Node("node 2")
@@ -36,9 +43,9 @@ Node3 = Node("node 3")
 Node4 = Node("node 4")
 Node5 = Node("node 5")
 list1 = LinkedList()
-# list1.insert(Node1)
-# list1.insert(Node2)
-# list1.insert(Node3)
-# list1.insert(Node4)
-# list1.insert(Node5)
+list1.insert(Node1)
+list1.insert(Node2)
+list1.insert(Node3)
+list1.insert(Node4)
+list1.insert(Node5)
 list1.printList()
