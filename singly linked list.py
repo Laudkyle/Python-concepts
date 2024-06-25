@@ -7,6 +7,17 @@ class LinkedList:
     def __init__(self):
         self.head = None
         
+    def listLength(self):
+        count = 0
+        current_node = self.head
+        while True:
+            count += 1
+            if current_node.next is None:
+                break
+            current_node = current_node.next
+        return count
+            
+            
     def insertEnd(self, new_node):
         if self.head is None:
             self.head = new_node
@@ -65,10 +76,13 @@ Node7 = Node("node 7")
 list1 = LinkedList()
 
 list1.insertEnd(Node1)
-list1.insertEnd(Node2)
+list1.insertEnd(Node1)
 list1.insertEnd(Node3)
 list1.insertHead(Node6)
 list1.insertEnd(Node4)
-list1.insertAt(Node7,1)
+list1.insertAt(Node7,5)
+list1.insertAt(Node5,5)
+
 
 list1.printList()
+print(list1.listLength())
